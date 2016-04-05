@@ -1,6 +1,6 @@
 # log [![Build Status](https://travis-ci.org/vinxi/log.png)](https://travis-ci.org/vinxi/log) [![GoDoc](https://godoc.org/github.com/vinxi/log?status.svg)](https://godoc.org/github.com/vinxi/log) [![Coverage Status](https://coveralls.io/repos/github/vinxi/log/badge.svg?branch=master)](https://coveralls.io/github/vinxi/log?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/vinxi/log)](https://goreportcard.com/report/github.com/vinxi/log) [![API](https://img.shields.io/badge/vinxi-core-green.svg?style=flat)](https://godoc.org/github.com/vinxi/log) 
 
-Apache compatible format traffic logging middleware for vinxi proxies. 
+Apache style logging middleware for vinxi proxies.
 Uses [apachelog](https://github.com/h2non/apachelog).
 
 ## Installation

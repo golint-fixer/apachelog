@@ -23,7 +23,7 @@ func New(w io.Writer) *Logger {
 }
 
 // Register registers the log middleware handler.
-func (l *Logger) Register(mw layer.Pluggable) {
+func (l *Logger) Register(mw layer.Middleware) {
 	mw.UsePriority("request", layer.TopHead, l.LogHTTP)
 }
 

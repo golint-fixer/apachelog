@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"gopkg.in/vinxi/log.v0"
+	"gopkg.in/vinxi/apachelog.v0"
 	"gopkg.in/vinxi/vinxi.v0"
 	"os"
 )
@@ -13,8 +13,8 @@ func main() {
 	// Create a new vinxi proxy
 	vs := vinxi.NewServer(vinxi.ServerOptions{Port: port})
 
-	// Attach the log middleware
-	vs.Use(log.New(os.Stdout))
+	// Attach the apachelog middleware
+	vs.Use(apachelog.New(os.Stdout))
 
 	// Target server to forward
 	vs.Forward("http://httpbin.org")
